@@ -1,0 +1,14 @@
+<ul>
+    <li *ngFor="let item of cart">
+        
+            <p> Name: {{item.name}}</p>
+            <p> Brand: {{item.brand}}</p>
+            <p> Cost: {{item.cost}}</p>
+            <p>Category: {{item.category}}</p>
+            <p>Quantity: {{item.quantity}}</p>
+            <p>Rating: {{item.rating}}</p>
+            <p *ngIf="item.expiry!=undefined">Date:{{item.expiry|date}}</p>
+        
+        
+    </li>
+</ul>
