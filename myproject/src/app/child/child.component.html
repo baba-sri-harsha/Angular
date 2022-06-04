@@ -1,0 +1,12 @@
+<div [ngClass]='childClass'>
+    <input #name><br>
+
+    <button (click)="showMessage()">Show</button>
+    <button (click)="printName(name.value)">Print</button>
+    <p>{{message}}</p>
+    <p>All Data</p>
+    {{childOne}}<br>
+    {{childTwo}}<br>
+    {{parentOne}}<br>
+    {{parentTwo}}<br>
+</div>

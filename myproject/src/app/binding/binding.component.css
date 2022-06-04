@@ -1,0 +1,10 @@
+.header{
+    color: red;
+    text-transform: uppercase;
+}
+.footer{
+    background-color: green;
+    letter-spacing: 5px;
+    height:30px;
+    
+}

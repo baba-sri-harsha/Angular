@@ -1,0 +1,63 @@
+<!-- <h1>{{message}}</h1>
+
+<h1>{{employee.name}}</h1>
+
+<h1>{{employee.city|lowercase}}</h1>
+
+<h1>{{employee|json}}</h1> -->
+
+ <!--| is called concept of piping -->
+
+<!-- <p>{{100+200}}</p>
+
+<img src="{{mylogo}}" alt="baba" height="100px" width="100px">
+<img [src]="mylogo" alt="baba" [height]="imageheight" width="100px">
+<img bind-src="mylogo" alt="asdf" bind-height="imageheight" width="100px"><br>
+<button disabled={{disabled}} height="100px" width="100px">click here </button><br> -->
+
+<!---EVENT BINDING -->
+
+<!-- <button (click)="show()" style="margin-top: 10px;">chage function</button><br>
+<button (click)="greetUser('baba')" style="margin-top: 10px;">greet user</button><br> -->
+
+<!---Class binding using-->
+<!-- 
+<h4 [class]="headerClass">Acheron Software</h4>
+<h4 [class]="footerClass">copyrights</h4>
+<h5 [class.footer]="!applyClass">all rights reserved</h5>
+
+<h5 [class.footer]="'footer'">all rights reserved</h5> -->
+
+
+<!----using property name headerClass footerClass-->
+
+<!-- <h5 [class]="applyClass ? headerClass: footerClass ">all rights reserved</h5> -->
+
+<!----using variable  name header and footer -->
+
+<!-- <h5 [class]="applyClass?'header':'footer'">all rights reserved</h5>
+
+<h3>Style Binding</h3>
+<h4 [style.textTransform]="'lowercase'">Giving the value directly</h4>
+<h4 [style.textTransform]="headerText">Giving the value directly</h4>
+<h4 [style.textTransform]="headerText">Giving the value directly</h4>
+<h4 [style.color]="headerColor">Giving the value directly</h4>
+<h4 [style]="applyClass?{'background-color':'red'}:{color:'purple'}">using boolean</h4>
+ -->
+
+
+
+
+
+<h1>Two way data binding </h1>
+
+<input type="text"  [(ngModel)]="username">{{"Welcome "+username}} 
+
+
+
+ <h1>Template Reference variable</h1>
+
+Enter Name <input type="text" #customer>
+
+<button (click)="greetCustomer(customer.value)">Greet Message </button>
+{{greetMessage}}

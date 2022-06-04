@@ -1,0 +1,8 @@
+.check{
+    text-transform: uppercase;
+    background-color: blue;
+}
+.error{
+    letter-spacing: 15px;
+    color: red;
+}

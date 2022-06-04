@@ -1,0 +1,31 @@
+<!-- <h1>{{"Have a great day"|slice:8}}</h1>
+<h1>{{"Have a great day"|slice:8:10}}</h1>
+<h1>{{["apple","orange","grapes","kiwi","plums"]|slice:1}}</h1>
+<h1>{{["apple","orange","grapes","kiwi","plums"]|slice:1:4}}</h1>
+ -->
+
+
+ <h3>Dates</h3>
+ {{emp.dateOfBirth|date}}<br>
+ {{emp.dateOfBirth|date:"shortDate"}}<br>
+ {{emp.dateOfBirth|date:"mediumDate"}}<br>
+ {{emp.dateOfBirth|date:"fullDate"}}<br>
+ {{emp.dateOfBirth|date:"short"}}<br>
+ {{emp.dateOfBirth|date:"medium"}}<br>
+ {{emp.dateOfBirth|date:"shortTime"}}<br>
+
+
+ <h1>Salary</h1>
+ {{emp.name|uppercase}}<br>
+ {{emp.name|lowercase}}<br>
+ {{emp.name|titlecase}}<br>
+
+ <h1>Numbers</h1>
+ {{emp.bonus|number}}<br>
+ {{emp.bonus|number:"1.0-2"}}<br>
+
+{{0.856|percent}}<br>
+{{0.856|percent: "1.0-2"}}<br>
+{{0.856|percent: "1.0-2"}}<br>
+
+

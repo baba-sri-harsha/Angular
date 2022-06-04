@@ -1,0 +1,17 @@
+<div [ngStyle]="{'background-color':'green'}">
+    <h1 >{{pmessage1}}</h1>
+    <h1 >{{pmessage2}}</h1>
+    Enter Parent name<input type="text" #parentname (keyup)=0>
+    <app-child
+        [parentOne]="pmessage1"
+        [parentTwo]="pmessage2"
+        [cOne]="parentname.value"
+        [childTwo]="'Last Child'"
+        (messageEvent)="firstChild=$event"
+        (childEvent)="secondChild=$event"
+    ></app-child>
+    <h3>Child data</h3>
+    {{firstChild}}
+    {{secondChild}}
+    <p>Bye</p>
+</div>

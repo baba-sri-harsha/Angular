@@ -1,0 +1,23 @@
+Enter<input   [(ngModel)]="username">
+ 
+<h2 *ngIf="username=='baba 'else temp2" [class]="checkClass">welcome {{username}}</h2>
+
+
+
+<ng-template #temp2>
+    <h2 [class]="errorClass"  *ngIf="username!=''">Better luck next time </h2>
+</ng-template>
+
+
+<ul>
+    <li *ngFor="let fruit of fruits" [style.list-style-type]="'none'">
+        <p *ngIf="fruit.includes('berry')" [style.color]="'pink'">{{fruit}}</p>
+        <p *ngIf="fruit.includes('apple')" [style.color]="'red'">{{fruit}}</p>
+        <p *ngIf="fruit.includes('o')" [style.color]="'orange'">{{fruit}}</p>
+        <p *ngIf="!fruit.includes('o')&&!fruit.includes('apple')&&!fruit.includes('berry')"  [style.color]="'blue'">{{fruit}}</p>
+    </li>
+</ul>
+
+
+
+

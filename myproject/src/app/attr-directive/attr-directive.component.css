@@ -1,0 +1,25 @@
+.one{
+    color:green;
+    text-transform: uppercase;
+}
+.two{
+    background-color: orange;
+    letter-spacing:5px ;
+}
+.three{
+    font-size: 25px;
+    text-decoration: line-through;
+}
+
+.back{
+    color: red;
+}
+.front{
+    color: blue;
+}
+.other{
+    color: violet;
+}
+
+
+

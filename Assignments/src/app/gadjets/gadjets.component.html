@@ -1,0 +1,38 @@
+<h1>Enter the Mobile or Laptop or Number</h1><br>
+
+<input type="text" #input  ><br>
+
+<button (click)="display(input.value)">Submit</button>
+
+<ul *ngIf="fromuser=='Mobile'">
+    <li *ngFor="let mobile of mobiles" [style.list-style-type]="'none'">
+        <h3 [ngClass]="{
+            mi:mobile.brand=='mi',
+            iqooz:mobile.brand=='iqooz',
+            other: mobile.brand=='one plus' 
+    }">
+            Name : {{mobile.model|uppercase}}<br>
+            Brand: {{mobile.brand}}<br>
+            Cost : {{mobile.price|currency:'Rs. '}}<br>
+            
+        </h3>
+        
+    </li>
+</ul>
+
+
+<ul *ngIf="fromuser=='Laptop'">
+    <li *ngFor="let laptop of laptops" [style.list-style-type]="'none'">
+        <h3 [ngClass]="{
+            mi:laptop.brand=='asus',
+            iqooz:laptop.brand=='lenovo',
+            other: laptop.brand=='dell'
+    }">
+            Name : {{laptop.model|uppercase}}<br>
+            Brand: {{laptop.brand}}<br>
+            Cost : {{laptop.price|currency:'Rs. '}}<br>           
+        </h3>
+        
+    </li>
+</ul>
+
