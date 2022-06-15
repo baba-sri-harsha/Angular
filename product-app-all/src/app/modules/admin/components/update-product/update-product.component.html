@@ -1,0 +1,52 @@
+<form #addForm="ngForm" (ngSubmit)="updateProduct(addForm)">
+  <mat-form-field>
+    <label>Enter Product Name</label>
+    <input
+      matInput
+      name="productName"
+      #productName="ngModel"
+      ngModel
+    /><br /><br />
+  </mat-form-field>
+
+  <mat-form-field>
+    <label>Select Category</label>
+    <mat-select name="category">
+      <mat-option *ngFor="let a of categories" value="{{ a }}">
+        {{ a }}</mat-option
+      >
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <label>Enter Brand</label>
+    <input matInput name="brand" ngModel #brand /><br /><br />
+  </mat-form-field>
+
+  <mat-form-field>
+    <label>Enter Price</label>
+    <input matInput name="price" ngModel #price /><br /><br />
+  </mat-form-field>
+
+  <mat-form-field>
+    <label>Enter Description</label>
+    <input matInput name="description" ngModel #description /><br />
+  </mat-form-field>
+
+  <mat-form-field>
+    <label ngModel #productImage>Enter ProductImage</label>
+    <input matInput name="productImage" /><br />
+  </mat-form-field>
+
+  <mat-form-field>
+    <label>Enter type</label>
+    <input matInput name="Type" #type /><br />
+  </mat-form-field>
+
+  <mat-form-field>
+    <label>Enter Rating</label>
+    <input matInput name="rating" #rating /><br />
+  </mat-form-field>
+
+  <button mat-raised-button>Submit</button>
+</form>

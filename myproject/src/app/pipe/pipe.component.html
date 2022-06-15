@@ -29,3 +29,31 @@
 {{0.856|percent: "1.0-2"}}<br>
 
 
+<input type="text" [(ngModel)]="choice"> <br>
+
+<!-- <select [(ngModel)] ="propertyName">
+    <option value="courseName">courseName</option>
+    <option value="cost">cost</option>
+    <option value="type">type</option>
+    <option value="medium">medium</option>
+    <option value="trainer">trainer</option>
+
+</select> -->
+
+<select [(ngModel)] ="propertyName">
+    <option value='{{property}}' *ngFor="let property of propNames">{{property|uppercase}}</option>
+</select><br>
+
+
+
+
+<ul >
+    <li *ngFor="let course of courseArray|filter:propertyName:choice">
+        {{course.courseName}}
+        {{course.cost}}
+        {{course.type}}
+        {{course.medium}}
+        {{course.trianer}} 
+    </li>
+</ul>
+

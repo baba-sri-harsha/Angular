@@ -1,0 +1,26 @@
+<mat-toolbar color="accent" class="mat-elevation-z6">
+  <a routerLink="['home']">
+    <mat-icon aria-hidden="false" aria-label="{2:label} icon">home</mat-icon>
+  </a>
+
+  <div *ngFor="let category of categories">
+    <button
+      class="button"
+      mat-raised-button
+      activatedRoute
+      [routerLink]="['/book', category.toLowerCase()]"
+    >
+      {{ category | uppercase }}
+    </button>
+  </div>
+
+  <button class="button" routerLink="login" mat-raised-button activatedRoute>
+    Login
+  </button>
+
+  <a routerLink="/cart">
+    <mat-icon aria-hidden="false" aria-label="{2:label} icon"
+      >shopping_cart</mat-icon
+    >
+  </a>
+</mat-toolbar>

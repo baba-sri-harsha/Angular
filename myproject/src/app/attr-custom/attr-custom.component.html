@@ -1,20 +1,16 @@
-
-
 <h3 appBasicHighlight>Using Basic Highlight Directive</h3>
 
-
-<h3 appRenderHighlight appBasicHighlight>Using Render Highlight Direvtive </h3>
+<h3 appRenderHighlight appBasicHighlight>Using Render Highlight Direvtive</h3>
 <h3 appHostHighlight>baba</h3>
 
-<input [(ngModel)]="username">
+<input [(ngModel)]="username" />
+
 <h3>Using Structural Directives</h3>
 <!---if username is not baba then welcome the user-->
-<h3 *appNotIf="username=='baba'">
-    Welcome {{username}} This is executed if username is not baba
+<h3 *appNotIf="username == 'baba'">
+  Welcome {{ username }} This is executed if username is not baba
 </h3>
 
-
-
-{{"baba"|title:'m'}}
-{{"sandeep"|title:'m'}}
-{{"akash"|title}}
+{{ "baba" | title: "m" }}
+{{ "sandeep" | title: "m" }}
+{{ "akash" | title }}

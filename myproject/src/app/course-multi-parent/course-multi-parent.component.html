@@ -1,0 +1,12 @@
+<div>
+  <app-course-child [academyName]="'nextWave'"></app-course-child>
+  <app-course-child [academyName]="'Jspiders'"></app-course-child>
+  <app-course-child [academyName]="'Shrishti'"></app-course-child>
+</div>
+<ul>
+  <li *ngFor="let item of childArray">
+    <p>{{ item.academyName }}</p>
+    <p>{{ item.courseName }}</p>
+    <p>{{ item.trainerName }}</p>
+  </li>
+</ul>

@@ -1,0 +1,5 @@
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+  NAme<input type="text" name="username" ngModel /><br />
+  Password<input type="password" name="password" ngModel /><br />
+  <button submit="onSubmit(userForm)">Submit</button>
+</form>

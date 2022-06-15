@@ -1,0 +1,211 @@
+[
+    {
+        "payingGuestId": 1,
+        "name": "madhu ladiess pg",
+        "pgGender": "FEMALE",
+        "category": "ANYONE",
+        "rating": 4,
+        "address": {
+            "addressId": 1,
+            "doorNumber": "23",
+            "streetName": "madhapur ",
+            "landMark": "siuseri ",
+            "city": "chennai",
+            "state": "tamilnadu",
+            "country": "India"
+        },
+        "rooms": [
+            {
+                "roomId": 3,
+                "roomShare": "ONE",
+                "availableBeds": 10,
+                "price": 15000.0,
+                "roomType": "AC"
+            },
+            {
+                "roomId": 1,
+                "roomShare": "TWO",
+                "availableBeds": 5,
+                "price": 4500.0,
+                "roomType": "NONAC"
+            },
+            {
+                "roomId": 2,
+                "roomShare": "THREE",
+                "availableBeds": 10,
+                "price": 3500.0,
+                "roomType": "AC"
+            },
+            {
+                "roomId": 4,
+                "roomShare": "FOUR",
+                "availableBeds": 10,
+                "price": 3500.0,
+                "roomType": "NONAC"
+            }
+        ]
+    },
+    {
+        "payingGuestId": 2,
+        "name": "akash men pg",
+        "pgGender": "MALE",
+        "category": "EMPLOYEE",
+        "rating": 5,
+        "address": {
+            "addressId": 2,
+            "doorNumber": "179",
+            "streetName": "kkpuram street",
+            "landMark": "Kkpuram busstop",
+            "city": "banglore",
+            "state": "karnataka",
+            "country": "India"
+        },
+        "rooms": [
+            {
+                "roomId": 6,
+                "roomShare": "TWO",
+                "availableBeds": 5,
+                "price": 4500.0,
+                "roomType": "NONAC"
+            },
+            {
+                "roomId": 7,
+                "roomShare": "THREE",
+                "availableBeds": 10,
+                "price": 3500.0,
+                "roomType": "AC"
+            },
+            {
+                "roomId": 5,
+                "roomShare": "ONE",
+                "availableBeds": 15,
+                "price": 16000.0,
+                "roomType": "AC"
+            }
+        ]
+    },
+    {
+        "payingGuestId": 3,
+        "name": "sandeep men pg",
+        "pgGender": "MALE",
+        "category": "ANYONE",
+        "rating": 5,
+        "address": {
+            "addressId": 3,
+            "doorNumber": "179",
+            "streetName": "road no 12",
+            "landMark": "powerpet railway station",
+            "city": "chennai",
+            "state": "tamilnadu",
+            "country": "India"
+        },
+        "rooms": [
+            {
+                "roomId": 9,
+                "roomShare": "ONE",
+                "availableBeds": 15,
+                "price": 16000.0,
+                "roomType": "AC"
+            },
+            {
+                "roomId": 10,
+                "roomShare": "TWO",
+                "availableBeds": 5,
+                "price": 4500.0,
+                "roomType": "AC"
+            },
+            {
+                "roomId": 8,
+                "roomShare": "THREE",
+                "availableBeds": 10,
+                "price": 3500.0,
+                "roomType": "AC"
+            }
+        ]
+    },
+    {
+        "payingGuestId": 4,
+        "name": "sharavani womens  pg",
+        "pgGender": "FEMALE",
+        "category": "STUDENTS",
+        "rating": 3,
+        "address": {
+            "addressId": 4,
+            "doorNumber": "179",
+            "streetName": "road no 12",
+            "landMark": "powerpet railway station",
+            "city": "hyderabad",
+            "state": "telangana",
+            "country": "India"
+        },
+        "rooms": [
+            {
+                "roomId": 12,
+                "roomShare": "THREE",
+                "availableBeds": 10,
+                "price": 3500.0,
+                "roomType": "AC"
+            },
+            {
+                "roomId": 13,
+                "roomShare": "ONE",
+                "availableBeds": 15,
+                "price": 16000.0,
+                "roomType": "NONAC"
+            },
+            {
+                "roomId": 11,
+                "roomShare": "TWO",
+                "availableBeds": 5,
+                "price": 4500.0,
+                "roomType": "NONAC"
+            }
+        ]
+    },
+    {
+        "payingGuestId": 5,
+        "name": "madhu ladiess pg",
+        "pgGender": "FEMALE",
+        "category": "ANYONE",
+        "rating": 4,
+        "address": {
+            "addressId": 5,
+            "doorNumber": "23",
+            "streetName": "madhapur ",
+            "landMark": "siuseri ",
+            "city": "chennai",
+            "state": "tamilnadu",
+            "country": "India"
+        },
+        "rooms": [
+            {
+                "roomId": 16,
+                "roomShare": "TWO",
+                "availableBeds": 5,
+                "price": 4500.0,
+                "roomType": "NONAC"
+            },
+            {
+                "roomId": 15,
+                "roomShare": "THREE",
+                "availableBeds": 10,
+                "price": 3500.0,
+                "roomType": "AC"
+            },
+            {
+                "roomId": 17,
+                "roomShare": "FOUR",
+                "availableBeds": 10,
+                "price": 3500.0,
+                "roomType": "NONAC"
+            },
+            {
+                "roomId": 14,
+                "roomShare": "ONE",
+                "availableBeds": 10,
+                "price": 15000.0,
+                "roomType": "AC"
+            }
+        ]
+    }
+]

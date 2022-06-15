@@ -1,0 +1,80 @@
+<!-- if we wan tto perfrom validation then we should use template refernce variable and equate to ng mdel #firstName="ngModel" -->
+
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+  FirstName
+  <input type="text" name="firstName" ngModel #firstName="ngModel" /><br />
+  <p *ngIf="firstName.touched && firstName.value == ''" [ngClass]="'error'">
+    name is required
+  </p>
+  <p
+    *ngIf="
+      firstName.touched &&
+      (firstName.value.length > 5 || firstName.value.length < 15)
+    "
+    [ngClass]="'error'"
+  >
+    length is required
+  </p>
+  LastName<input type="text" name="lastname" ngModel #lastname /><br />
+  Email:<input type="email" name="email" ngModel #email /><br />
+  Gender:
+  <label for="male">male</label>
+  <input
+    id="male"
+    type="radio"
+    name="gender"
+    value="male"
+    ngModel
+    #gender
+  /><br />
+  <label for="female">female</label>
+  <input
+    id="female"
+    type="radio"
+    name="gender"
+    value="female"
+    ngModel
+    #gender
+  /><br />
+
+  Password:<input
+    type="password"
+    id="password"
+    name="password"
+    ngModel
+    #password
+  /><br />
+  <!-- ng model group is used for nested tags  -->
+  <div ngModelGroup="address">
+    <!-- city:<input type="text" name="city" ngModel #city /><br /> -->
+    State:<input type="text" name="state" ngModel #state /><br />
+    Cities:<select ngModel #city>
+      <option *ngFor="let city of cities" value="city" name="city">
+        {{ city }}
+      </option>
+    </select>
+  </div>
+  <input type="submit" value="Add User" [disabled]="!userForm.valid" /><br />
+  <!-- <button type="reset" value="Reset" > -->
+  <button type="reset" value="Reset" (click)="resetForm(userForm)">
+    Reset
+  </button>
+  <button value="Reset" (click)="resetUserForm()">Reset</button>
+  /><br />
+</form>
+
+<p>********************Validation********************</p>
+
+{{ firstName.value }}
+{{ firstName.valid }} {{ firstName.invalid }}<br />
+{{ firstName.dirty }} {{ firstName.pristine }}<br />
+{{ firstName.untouched }}{{ firstName.touched }}<br />
+<p>********************Firstname********************</p>
+
+{{ userForm.value }}<br />
+Touched{{ userForm.touched }}<br />
+UnTouched{{ userForm.untouched }}<br />
+Pristine {{ userForm.pristine }}<br />
+Dirty{{ userForm.dirty }}<br />
+Result{{ userForm.value | json }}<br />
+Submitted{{ userForm.submitted }}<br />

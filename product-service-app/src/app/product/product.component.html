@@ -1,0 +1,9 @@
+<ul  >
+    <li *ngFor="let product of productObs|async">
+        <p>{{product.productId}}</p>
+        <p>{{product.name}}</p>
+        <p>{{product.brand}}</p>
+        <p>{{product.category}}</p>
+        <p>{{product.price}}</p>
+    </li>
+</ul>

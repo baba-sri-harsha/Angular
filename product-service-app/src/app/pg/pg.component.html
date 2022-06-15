@@ -1,0 +1,18 @@
+<ul>
+  <li *ngFor="let pg of pgList ">
+    <p>{{ pg.name }}</p>
+    <p>{{ pg.pgGender }}</p>
+    <p>{{ pg.category }}</p>
+    <p>{{ pg.rating }}</p>
+    <ul>
+      <li *ngFor="let add of pg.address | keyvalue">
+        <p>{{ add.key | uppercase }} : {{ add.value }}</p>
+      </li>
+    </ul>
+    <ul>
+        <li *ngFor="let room of pg.rooms|keyvalue" >
+            <p>{{room.key}}:{{room.value}}</p>
+        </li>
+    </ul>
+  </li>
+</ul>

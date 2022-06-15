@@ -1,0 +1,8 @@
+.services {
+  display: flex;
+}
+.a {
+  color: blue;
+  height: 25px;
+  margin: 20px;
+}

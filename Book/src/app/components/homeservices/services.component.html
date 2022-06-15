@@ -1,0 +1,12 @@
+<div>
+  <div [ngStyle]="{ 'background-color': 'orange ' }">
+    <!-- <nav mat-tab-nav-bar >
+              <p *ngFor="let category of categories">
+              <button mat-button (click)="selectCategory(category)">{{category}}</button> 
+              </p>
+          </nav> -->
+    <a [routerLink]="['rent']" routerLintActive="true">Rental</a>
+    <a [routerLink]="['buy']" routerLintActive="true">Buying</a>
+  </div>
+</div>
+<router-outlet></router-outlet>

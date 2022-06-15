@@ -8,3 +8,8 @@
     height:30px;
     
 }
+
+h4{
+    color: green;
+    text-transform: capitalize;
+}

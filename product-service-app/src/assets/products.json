@@ -1,0 +1,50 @@
+[
+    {
+        "productId": 1,
+        "name": "Mobile",
+        "category": "Electronics",
+        "brand": "Apple",
+        "price": 50000
+    },
+    {
+        "productId": 2,
+        "name": "Laptop",
+        "category": "Electronics",
+        "brand": "Dell",
+        "price": 80000
+    },
+    {
+        "productId": 3,
+        "name": "Washing Machine",
+        "category": "Electronics",
+        "brand": "IFB",
+        "price": 37000
+    },
+    {
+        "productId": 4,
+        "name": "Fridge",
+        "category": "Electronics",
+        "brand": "Samsung",
+        "price": 47000
+    },
+    {
+        "productId": 5,
+        "name": "Baba's Way",
+        "category": "Books",
+        "brand": "Baba Brand",
+        "price": 7000000
+    },
+    {
+        "productId": 6,
+        "name": "FootBall",
+        "category": "Sports",
+        "brand": "Cocso",
+        "price": 700
+    },
+    {
+        "productId": 7,
+        "name": "Running Shoes",
+        "category": "Sports",
+        "brand": "Puma",
+        "price":100}
+    ]

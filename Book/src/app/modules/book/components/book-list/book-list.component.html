@@ -1,0 +1,22 @@
+<ul>
+  <li *ngFor="let book of books">
+    <a>
+      {{ book.title }}
+    </a>
+    <button (click)="toDescribe(book)">book-details</button>
+    <button (click)="addToCart(book)">Add to cart</button>
+  </li>
+</ul>
+
+<!-- data source represents array  -->
+<table mat-table [dataSource]="books">
+  <!-- columnDefName,matheadercell(column name),matcell(data) -->
+
+  <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+    <th mat-header-cell *matHeaderCellDef>{{ column | uppercase }}</th>
+    <td *matCellDef="let book">{{ book[column] }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>

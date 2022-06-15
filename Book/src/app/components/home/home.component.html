@@ -1,0 +1,16 @@
+<div>
+  <div [ngStyle]="{ 'background-color': 'aqua' }">
+    <!-- <nav mat-tab-nav-bar >
+            <p *ngFor="let category of categories">
+            <button mat-button (click)="selectCategory(category)">{{category}}</button> 
+            </p>
+        </nav> -->
+    <h1>Online Book Shop</h1>
+    <a [routerLink]="['aboutus']" routerLintActive="true">About Us</a>
+    <a [routerLink]="['contactus']" routerLintActive="true">Contact</a>
+    <a [routerLink]="['services']" routerLintActive="true">Service</a>
+    <a [routerLink]="['cart-details']" routerLintActive="true">Service</a>
+    <a [routerLink]="['order-details']" routerLintActive="true">Service</a>
+  </div>
+</div>
+<router-outlet></router-outlet>

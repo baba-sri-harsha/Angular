@@ -1,0 +1,44 @@
+<p>reactive-forms works!</p>
+<form [formGroup]="userForm">
+  First Name :
+  <input type="text" name="fristName" formControlName="firstName" /><br />
+  <div
+    *ngIf="myform?.['firstName']?.invalid &&
+  ((myform?.['firstName']?.touched)||(myform?.['field']?.dirty))"
+  >
+    <p>first name is required</p>
+  </div>
+  <div *ngIf="myform?.['firstName']?.errors?.['minlength']">
+    <p>minlength is required</p>
+  </div>
+  Last Name :
+  <input type="text" name="lastName" formControlName="lastName" /><br />
+  E-Mail : <input type="email" name="email" formControlName="email" /><br />
+  Password :
+  <input type="password" name="password" formControlName="password" /><br />
+  Gender :
+  <input type="radio" name="gender" value="male" formControlName="gender" />
+  <label for="gender">Male</label>
+
+  <input
+    type="radio"
+    id="female"
+    name="gender"
+    value="female"
+    formControlName="gender"
+  />
+  <label for="gender">Female</label><br />
+  <div formGroupName="address">
+    City : <input type="t-ext" name="city" formControlName="city" /><br />
+    State : <input type="text" name="state" formControlName="state" /><br />
+  </div>
+  <br />
+  <input type="submit" value="Add User" (click)="onRegister(userForm)" /><br />
+</form>
+
+{{ userForm.valid }}
+{{ userForm.invalid }}
+{{ userForm.touched }}
+{{myform?.['firstName']?.value}}
+{{myform?.['lastName']?.errors?.['required']}}
+<h2 *ngIf="myform?.['firstName']?.valid">valid</h2>
