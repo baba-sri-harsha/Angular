@@ -1,0 +1,22 @@
+<div class="home-container">
+  <div class="home-header">
+    <div>
+      <div class="home-header-text">
+        <h1>Pg Inn is affordable...</h1>
+        <h4>Select your city</h4>
+      </div>
+      <div ngClass="cities-container">
+        <button
+          mat-raised-button
+          (click)="getPgByCity(city)"
+          color="primary"
+          *ngFor="let city of cities"
+        >
+          {{ city | titlecase }}
+        </button>
+      </div>
+      <h1>Enjoy your stay</h1>
+    </div>
+    <img src="assets/images/home.jpg" ngClass="home-image" />
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+mat-toolbar {
+  height: 80px;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  margin: 5px;
+}
+
+.footer-container {
+  margin-top: auto;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}

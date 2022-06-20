@@ -1,0 +1,46 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.home-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image {
+  width: 300px;
+  height: 300px;
+}
+
+.cities-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  margin: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin: 15px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+  .home-image {
+    width: 500px;
+    height: 300px;
+  }
+}
